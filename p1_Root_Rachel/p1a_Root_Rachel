@@ -1,0 +1,32 @@
+def line_number(input_file, output_file):
+    try:
+        input_file = open(input_file, 'r')
+        output_file = open(output_file, 'w')
+        count = 1
+
+        for line in input_file:
+            output_file.write(f"{count}. {line}")
+            count += 1
+
+        input_file.close()
+        output_file.close()
+
+    except FileNotFoundError:
+        print("The file does not exist")
+
+
+def main():
+    main_input = r"/workspaces/phomework2_Root_Rachel/p1_Root_Rachel/my name is Rachel"
+    new_output = "numbered_me.txt"
+
+    try:
+        line_number(main_input, new_output)
+        print("Here's your input, but numbered.")
+        with open(new_output, 'r') as f:
+            print(f.read())
+
+    except FileNotFoundError:
+        print("Nah man, can't find that")
+
+
+main()
