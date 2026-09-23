@@ -1,0 +1,6 @@
+text = "I like cats"
+
+# Loop through text with indexes and grab only the vowels
+find_vowels = {i: c for i, c in enumerate(text) if c.lower() in "aeiou"}
+
+print(find_vowels)

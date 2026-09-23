@@ -1,0 +1,5 @@
+strings = ['One', 'SEVEN', 'three', 'two', 'Ten']
+
+answer = [(s.lower(), len(s)) for s in strings if len(s) < 5]
+
+print(answer)

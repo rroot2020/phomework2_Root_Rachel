@@ -1,0 +1,5 @@
+names = ['Rachel Nicole Root', 'Seth Earl Bernoir']
+
+result = [f"{name.split()[0]} {name.split()[1][0]}. {name.split()[2]}" for name in names]
+
+print(result)

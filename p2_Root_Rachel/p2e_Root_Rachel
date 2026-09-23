@@ -1,0 +1,5 @@
+s = ["one", "two", "three"]
+
+dict_comp = {word: len(word) for word in s}
+
+print(dict_comp)

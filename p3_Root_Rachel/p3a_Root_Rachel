@@ -1,0 +1,18 @@
+def add_user(sn, username, fullname):
+    if username in sn:
+        return False
+
+    sn[username] = (fullname, [])
+    return True
+
+my_network = {
+    "Rachel": ("Rachel Root", ["Seth"]),
+    "Seth": ("Seth Bernoir", ["Rachel", "sally", "Luna"]),
+}
+
+print(add_user(my_network, "alora", "Alora Bernoir"))  
+
+
+print(add_user(my_network, "Seth", "Seth Bernoir")) 
+
+

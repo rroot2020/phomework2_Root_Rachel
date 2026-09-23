@@ -1,0 +1,6 @@
+lst1 = ["Spam", "Trams", "Elbows", "Tops", "Astral"]
+lst2 = ["Bowels", "Sample", "Altars", "Stop", "Course", "Smart"]
+
+anagrams = [(w1, w2) for w1 in lst1 for w2 in lst2 if sorted(w1.lower()) == sorted(w2.lower())]
+
+print(anagrams)
